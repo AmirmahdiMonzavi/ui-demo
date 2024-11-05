@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .ltr {
+    direction: ltr;
+  }
+  .rtl {
+    direction: rtl;
+  }
+  .padding-block-start-1 {
+    padding-block-start: 40px;
+  }
+  .padding-block-start-2 {
+    padding-block-start: 30px;
+  }
+  .padding-block-start-3 {
+    padding-block-start: 50px;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  @-moz-document url-prefix() {
+    .no-scrollbar {
+      scrollbar-width: none;
+    }
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+:root {
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
